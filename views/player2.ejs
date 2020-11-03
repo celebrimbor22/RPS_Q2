@@ -1,0 +1,34 @@
+<div class="container">
+        <head>This is the game of the year</head>
+        <header>
+            <div class = logo>
+                <h1 class="titulos">Player 2</h1>
+                <h1 class="subtitulos"> &nbsp; Rock, Paper, Scissors</h1>
+            </div>        
+            <form action="/player2" method="POST">
+            <div class = game>
+                <label for="rps">Write your tool:</label><br>
+                <input type="text" id="rps" name="rps" placeholder="rock|paper|scissors"><br>  <br>
+                <input  type="submit" value="Submit" id='buttons'><br>
+            </div>        
+            </form>            
+        </header>
+        <footer class="footera">
+         <% if(data==='W'){ %>
+            <script>
+            alert("YOU WIN!!!")
+        </script>>
+            <% } %>
+            <% if(data==='L'){ %>
+            <script>
+            alert("YOU LOSE!!!")
+        </script>>
+            <% } %>
+            <% if(data==='T'){ %>
+            <script>
+            alert("TIE")
+        </script>
+            <% } %>
+            <p> Wins: <%= gp2 %></p>
+        </footer>
+    </div>

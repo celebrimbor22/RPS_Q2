@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS_game</title>
+</head>
+<script>
+    let tool;
+
+    document.addEventListener("DOMContentLoaded",function(event){
+        document.getElementById('buttons').addEventListener('click',(event)=>{
+            tool = document.getElementById('rps').value.trim().toLowerCase();
+            if(tool == 'rock'){
+                alert('ROCK');
+            }else if(tool == 'paper'){
+                alert('paper');
+            }else if(tool == 'scissors'){
+                alert('scissors');
+            }else{
+                alert('NOT VALID!!');
+            }
+        });
+    });
+</script>
+<style>
+   
+   body, html {
+    
+    height: 100%;
+    margin: 0;
+    }
+    .container {
+        /* The image used */
+        background-image: url("IMG/rps_i.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        text-align: center;
+    }
+    .footera {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+    
+    </style>
+<body>
+  <%- body %>
+    </body> 
+    <!-- <script src="./code.js"></script> -->
+</html>
